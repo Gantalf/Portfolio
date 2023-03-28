@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './Navbar.css';
 
 const Navbar = ({ isScrolling }) => {
@@ -9,7 +10,14 @@ const Navbar = ({ isScrolling }) => {
 
   return (
     <nav className={`navbar-container ${isScrolling > 20 ? 'scrolling' : 0}`}>
-      <div className='navbar-container__logo' onClick={toTop}>Luciano</div>
+      <div className='navbar-container__logo'>
+        <Link to='/' className="custom-link">
+          <h1 onClick={toTop}>Luciano</h1>
+        </Link>
+        <Link to='blog' className="custom-link">
+          <h1>Blog</h1>
+        </Link>
+      </div>
     </nav>
   )
 }

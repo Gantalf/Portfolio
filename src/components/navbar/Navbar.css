@@ -9,6 +9,11 @@
   z-index: 1; /*para que este por encima del cover*/
 }
 
+.custom-link {
+  text-decoration: none;
+  color: white;
+}
+
 /*Esta clase se activa si el scroll es > 20, o sea se movio algo*/
 .scrolling {
   background-color: black;
@@ -16,8 +21,15 @@
 }
 
 .navbar-container__logo {
+  display: flex;
+  justify-content: flex-start;
   height: 80px;
   line-height: 80px;
   color: white;
   cursor: pointer;
+}
+
+h1 {
+  margin-right: 20px;
+  font-size: 2rem
 }

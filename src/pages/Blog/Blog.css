@@ -1,0 +1,82 @@
+.blog {
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+}
+
+.blog--banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background-color: black;
+    height: 400px;
+    object-fit: contain;
+}
+
+.blog--title {
+    color: white;
+    font-size: 6rem;
+}
+
+.blog--subtitle {
+    color: white;
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.blog--articles {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 100vh;
+}
+
+.blog--wpp {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+
+@media screen and (max-width: 960px) {
+    .blog {
+        width: 100%;
+        background-color: rgb(42, 42, 42);
+    }
+    
+    .blog--banner > h1 {
+      font-size: 7rem;
+      text-align: center;
+    }
+  
+    .blog--banner > p {
+      text-align: center;
+      font-size: 2.2rem;
+      width: 100%;
+    }
+
+    .blog--articles {
+        width: 100%;
+    }
+
+    .blog--wpp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        background-color: white;
+    }
+
+    .hacker-img {
+        height: 60%;
+        background-image: url("../../assets/hacker.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hacker-content{
+        text-align: center;
+        font-size: 2.2rem;
+        width: 100%;
+    }
+  }

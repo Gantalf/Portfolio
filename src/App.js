@@ -3,7 +3,6 @@ import './App.css';
 import Cover from './components/cover/Cover.jsx';
 import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
-import Slider from './components/slider/Slider';
 import Info from './components/info/Info';
 import Footer from './components/footer/Footer';
 
@@ -24,7 +23,6 @@ function App() {
       <Navbar isScrolling={scroll} />
       <Cover />
       <About />
-      <Slider />
       <Info />
       <Footer />
     </div>
